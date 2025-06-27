@@ -1,0 +1,140 @@
+.movie-detail {
+  position: relative;
+  color: #fff;
+}
+
+.movie-detail::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.9) 30%, transparent 70%);
+  z-index: 0;
+}
+
+.movie-detail-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 1;
+}
+
+.movie-detail-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  padding: 100px 40px;
+}
+
+.movie-detail-poster {
+  width: 300px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.movie-detail-info {
+  margin-left: 40px;
+}
+
+.movie-detail-title {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.movie-detail-genres {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.movie-detail-genre {
+  background-color: #333;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.movie-detail-cast {
+  margin-top: 20px;
+}
+
+.movie-detail-trailer {
+  margin-top: 20px;
+}
+
+.movie-detail-trailer-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+}
+
+.video-player-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 100;
+}
+
+.video-player {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-play {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-play:hover {
+  background-color: #f40612;
+}
+
+@media (max-width: 768px) {
+  .movie-detail-content {
+    flex-direction: column;
+    padding: 80px 20px;
+  }
+
+  .movie-detail-poster {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .movie-detail-info {
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .movie-detail-title {
+    font-size: 28px;
+  }
+
+  .movie-detail-genres {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .movie-detail-cast {
+    text-align: left;
+  }
+}
