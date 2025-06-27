@@ -5,6 +5,10 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 8080;
 
+if (!process.env.TMDB_API_KEY) {
+  console.error('FATAL ERROR: TMDB_API_KEY is not defined.');
+}
+
 app.use(cors());
 app.use(express.json());
 

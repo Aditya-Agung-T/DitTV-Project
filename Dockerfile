@@ -10,8 +10,8 @@ RUN npm run build
 FROM node:18
 WORKDIR /usr/src/app
 COPY backend/package*.json ./
-RUN npm install
-COPY backend/ ./
+RUN npm install --production
+COPY backend/. ./
 COPY --from=frontend-builder /usr/src/app/dist ./frontend/dist
 
 EXPOSE 8080
