@@ -10,6 +10,7 @@ const MovieDetail = () => {
   const [showPlayer, setShowPlayer] = useState(false);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     getMovieById(id).then(data => setMovie(data));
   }, [id]);
 

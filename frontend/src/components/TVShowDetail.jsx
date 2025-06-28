@@ -10,6 +10,7 @@ const TVShowDetail = () => {
   const { id } = useParams();
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     getTVShowById(id).then(setShow);
   }, [id]);
 

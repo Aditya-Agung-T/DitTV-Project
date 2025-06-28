@@ -33,17 +33,17 @@ const Header = () => {
             <Link to="/" onClick={closeMenu}>Home</Link>
             <Link to="/movies" onClick={closeMenu}>Movies</Link>
             <Link to="/tv" onClick={closeMenu}>TV Shows</Link>
+            <form onSubmit={handleSearch} className="search-form">
+              <input
+                type="text"
+                placeholder="Search..."
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                className="search-input"
+              />
+              <button type="submit" className="search-button">Go</button>
+            </form>
           </nav>
-          <form onSubmit={handleSearch} className="search-form">
-            <input
-              type="text"
-              placeholder="Search..."
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              className="search-input"
-            />
-            <button type="submit" className="search-button">Go</button>
-          </form>
           <div className={`menu-icon ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
             <span></span>
             <span></span>

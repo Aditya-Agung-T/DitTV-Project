@@ -12,10 +12,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "audit": "^0.0.6",
     "axios": "^1.10.0",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^4.19.2",
+    "fix": "^0.0.3",
     "swiper": "^11.2.8"
   },
   "devDependencies": {

@@ -122,7 +122,7 @@
   .movie-detail-info {
     margin-left: 0;
     margin-top: 20px;
-    text-align: left;
+    text-align: center;
   }
 
   .movie-detail-title {
@@ -130,11 +130,11 @@
   }
 
   .movie-detail-genres {
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
   .movie-detail-cast {
-    text-align: left;
+    text-align: center;
   }
 }
