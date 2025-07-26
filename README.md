@@ -62,6 +62,3 @@ Untuk menjalankan proyek ini secara lokal, ikuti langkah-langkah berikut:
 -   [React Router](https://reactrouter.com/)
 -   [Swiper](https://swiperjs.com/)
 
-## Screenshots
-
-_(Tambahkan screenshot aplikasi Anda di sini)_
